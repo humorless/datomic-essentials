@@ -13,6 +13,12 @@ Strangely enough, when I use event sourcing, it works perfectly fine—no diffic
 You might think I’m about to tell you that I’m some kind of 10x engineer. That’s not the case. What I’m really here to share is my secret: I use a database with built-in event sourcing—Datomic.
 
 
+## Acknowledgments
+
+The completion of this article series is largely inspired by my work at [Gaiwan](https://gaiwan.co/) and [LambdaIsland](https://lambdaisland.com/). Additionally, while attending [Heart of Clojure](https://2024.heartofclojure.eu/), I learned that non-Chinese readers were also interested, so I translated the original [Traditional Chinese version](https://ithelp.ithome.com.tw/users/20161869/ironman/7432) into English.  
+
+If you have any thoughts after reading this series, feel free to reach out to [me](https://replware.dev/).
+
 ## License
 
 Copyright @ Laurence Chen
