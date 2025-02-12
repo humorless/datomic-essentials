@@ -2,7 +2,7 @@
 
 In previous examples introducing Datalog, you might have encountered some special syntax that could be quite confusing. This section provides a detailed explanation.
 
-- `[variable/expression ...]` in the `:find` clause, which appeared in [Day12](./day12.md)
+- `[variable/expression ...]` in the `:find` clause, which appeared in [Day12](./day12-datalog-part-7-more-joins.md)
 
 ```
 [:find [(pull ?e [:person/name 
@@ -13,7 +13,7 @@ In previous examples introducing Datalog, you might have encountered some specia
 
 In this query, the `[(pull variable pattern) ...]` part includes the `[variable/expression ...]` construct, which is a type of `:find` clause syntax, also called a **find specification**.
 
-- `variable/expression .` in the `:find` clause, which appeared in [Day14](./day14.md)
+- `variable/expression .` in the `:find` clause, which appeared in [Day14](./day14-datalog-part-9-aggregates-and-the-with-clause.md)
 
 ```
 (d/q '[:find (sum ?heads) .
@@ -47,7 +47,7 @@ SELECT generate_series(1, 10) AS num_series;
          10
 ```
 
-In Datalog, both [input](./day10.md) and output data can take one of four forms:  
+In Datalog, both [input](./day10-datalog-part-5.md) and output data can take one of four forms:  
 - **Scalar**  
 - **Tuple**  
 - **Collection**  

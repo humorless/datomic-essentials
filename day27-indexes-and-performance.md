@@ -1,6 +1,6 @@
 # Indexes and Performance
 
-Previously, in [Day25](./day25.md), we discussed primary key settings and mentioned that Datomic can be seen as a high-level database. It allows users to focus on business rules without worrying about primary key design.
+Previously, in [Day25](./day25-primary-key-and-entity-id.md), we discussed primary key settings and mentioned that Datomic can be seen as a high-level database. It allows users to focus on business rules without worrying about primary key design.
 
 Regarding indexes, Datomic similarly provides high-level semantics. There are four types of indexes in Datomic, three of which are generated automatically. Only the AVET index requires manual configuration by setting `:db/index` in the schema.
 
