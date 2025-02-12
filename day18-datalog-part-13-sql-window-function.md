@@ -1,6 +1,6 @@
 # Starting with Datalog -- part 13 (SQL Window Function)
 
-In [day 11](./day11.md), [day 16](./day16.md), and [day 17](./day17.md), we discussed several features unique to Datalog, such as:
+In [day 11](./day11-datalog-part-6-more-queries.md), [day 16](./day16-datalog-part-11-rules.md), and [day 17](./day17-datalog-part-12-cross-database-join.md), we discussed several features unique to Datalog, such as:
 
 1. Querying table schemas.
 2. Querying transactions.
@@ -86,7 +86,7 @@ For such relatively complex requirements, we need to use a **user-defined aggreg
 
 In the example below:
 
-- `max-by-population` is a user-defined aggregate function. In [Day 13](./day13.md), we discussed runtime environment issues: user-defined aggregate functions don’t require special installation due to Datomic’s unique architecture.
+- `max-by-population` is a user-defined aggregate function. In [Day 13](./day13-datalog-part-8-predicates-and-transformation-functions.md), we discussed runtime environment issues: user-defined aggregate functions don’t require special installation due to Datomic’s unique architecture.
 - When calling it in a Datalog query, you need to provide the full namespace, so it becomes `repl-sessions.day18/max-by-population`.
 - `tuple` is a built-in Datomic function used to bundle variables like `?city` and `?population` into a single array.
 - [Code link](https://github.com/humorless/ithome2024/blob/main/repl-sessions/day18.clj)
