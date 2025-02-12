@@ -31,7 +31,7 @@ HAVING COUNT(post_id) >= 3;
 
 How should we understand this query?
 
-- In [Day 13](./day13.md), we mentioned that Datalog also allows us to use **function expressions**. The first `:where` clause, `[(datomic.api/q ... $)  [[?tag ?n]]]`, is a function expression. Its form is `[(<fn> <arg1> <arg2> ...) <result-binding>]`. This binds the result of the function computation `(datomic.api/q ...)` to the variable `[[?tag ?n]]`.
+- In [Day 13](./day13-datalog-part-8-predicates-and-transformation-functions.md), we mentioned that Datalog also allows us to use **function expressions**. The first `:where` clause, `[(datomic.api/q ... $)  [[?tag ?n]]]`, is a function expression. Its form is `[(<fn> <arg1> <arg2> ...) <result-binding>]`. This binds the result of the function computation `(datomic.api/q ...)` to the variable `[[?tag ?n]]`.
 
 - Since the function computation involves a subquery, let’s first break down the subquery. The query below finds all post-tag combinations, groups them by tag, and counts how many times each tag appears in posts. The result is in the form of `Tag: Occurrences`, which is then bound to the variable `[[?tag ?n]]` that the parent query can access.
 

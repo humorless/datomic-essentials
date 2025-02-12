@@ -1,6 +1,6 @@
 # Impedance Mismatch and Datomic's Solution
 
-In [Day 4](./day04.md), we discussed the impedance mismatch problem and highlighted two common forms of this issue:
+In [Day 4](./day04-common-flaws-in-sql-databases-continued.md), we discussed the impedance mismatch problem and highlighted two common forms of this issue:
 
 1. N+1 queries causing excessive I/O, slowing down performance.
 2. N+1 queries potentially causing data inconsistency due to concurrent writes.
@@ -67,7 +67,7 @@ SQL, being a string-based query language, has poor composability. Many ORMs acce
 
 One might ask: “Is this related to SQL being string-based?”
 
-The core issue lies in its string nature. A well-designed query language should be based on structured data types, as discussed in [Day 3](./day03.md). When the query language aligns with data structures, it becomes easier to decompose queries into components while ensuring consistency in the syntax tree during decomposition and reconstruction.
+The core issue lies in its string nature. A well-designed query language should be based on structured data types, as discussed in [Day 3](./day03-common-flaws-in-sql-databases.md). When the query language aligns with data structures, it becomes easier to decompose queries into components while ensuring consistency in the syntax tree during decomposition and reconstruction.
 
 > Explaining SQL injection in Mandarin:
 >

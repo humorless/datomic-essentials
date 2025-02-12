@@ -1,6 +1,6 @@
 # Constraints
 
-In [Day25](./day25.md), we discussed enumerated types (enums). To some extent, enums are also a type of constraint—they limit the values that can be assigned to a specific field to a predefined set.
+In [Day25](./day25-primary-key-and-entity-id.md), we discussed enumerated types (enums). To some extent, enums are also a type of constraint—they limit the values that can be assigned to a specific field to a predefined set.
 
 When it comes to SQL databases, the most commonly used constraints are the following three:
 
@@ -68,7 +68,7 @@ As such, I believe Datomic deliberately avoids concise syntax for foreign key co
 
 Regarding foreign keys mentioned in the common applications section, Datomic does not provide concise syntax for them. This statement is only half the story. With custom assertion functions, there is virtually no complex constraint that cannot be expressed.
 
-As demonstrated in [Day18](./day18.md), if complex aggregation queries are hard to express, custom aggregation functions can be used, enhancing semantic clarity. The same applies to constraints in Datomic. It provides two types of custom constraints: **Attribute Predicates** for strengthening attribute semantics and **Entity Specs** for imposing various restrictions on entities.
+As demonstrated in [Day18](./day18-datalog-part-13-sql-window-function.md), if complex aggregation queries are hard to express, custom aggregation functions can be used, enhancing semantic clarity. The same applies to constraints in Datomic. It provides two types of custom constraints: **Attribute Predicates** for strengthening attribute semantics and **Entity Specs** for imposing various restrictions on entities.
 
 Here’s a terminology clarification: in the context of Clojure/Datomic, "constraints" and "specs" are nearly synonymous and are often used interchangeably.
 

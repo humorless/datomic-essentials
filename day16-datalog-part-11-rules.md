@@ -114,7 +114,7 @@ Using the `associated-with` rule, the query below identifies both actors and dir
 
 ### Recursive Calls
 
-Rules can invoke themselves recursively. In [Day 13](./day13.md), we mentioned five types of clauses in Datalog:
+Rules can invoke themselves recursively. In [Day 13](./day13-datalog-part-8-predicates-and-transformation-functions.md), we mentioned five types of clauses in Datalog:
 
 1. `not` clause
 2. `not-join` clause
