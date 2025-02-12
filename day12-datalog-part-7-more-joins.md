@@ -12,7 +12,7 @@ By further simplifying, we can reduce the necessary SQL syntax to three basic co
 
 ## Using Datalog to Perform Various SQL Joins
 
-In article [Day8](./day08.md), we established that standard Datalog syntax can already perform an `inner join`. In other words, to achieve SQL join results using Datalog, we only need to find corresponding syntax for `left join ... is null` and combining multiple query results (union).
+In article [Day8](./day08-datalog-part-3.md), we established that standard Datalog syntax can already perform an `inner join`. In other words, to achieve SQL join results using Datalog, we only need to find corresponding syntax for `left join ... is null` and combining multiple query results (union).
 
 ### `left join ... is null`
 

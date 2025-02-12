@@ -36,7 +36,7 @@ According to the Datalog documentation, there are five types of clauses that can
 4. `or-join` clause
 5. Expression clause
 
-The `not`, `not-join`, `or`, and `or-join` clauses were covered in [Day 12](./day12.md). Expression clauses, however, come in four forms:
+The `not`, `not-join`, `or`, and `or-join` clauses were covered in [Day 12](./day12-datalog-part-7-more-joins.md). Expression clauses, however, come in four forms:
 
 1. Data patterns
    - The most commonly used type of clause.
@@ -107,7 +107,7 @@ In this query, `[(tutorial.fns/age ?born ?today) ?age]]` is a function expressio
 Three key points to note:
 
 1. All pure functions in the `clojure.core` namespace can be used as functions in Datalog, except for `eval`.
-2. The variable bound to the function result can take one of four forms: scalar, tuple, collection, or relation. These forms are identical to the [variable binding forms](./day10.md) in Datalog queries.
+2. The variable bound to the function result can take one of four forms: scalar, tuple, collection, or relation. These forms are identical to the [variable binding forms](./day10-datalog-part-5.md) in Datalog queries.
 3. When using Datomic with languages like Clojure, Java, or Kotlin, **user-defined functions** can be passed into Datalog queries as transformation functions. (In this example, the user-defined function is `tutorial.fns/age`, and the full namespace must be specified.)
 
 ## Runtime Environment

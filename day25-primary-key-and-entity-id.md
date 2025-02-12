@@ -28,11 +28,11 @@ Since Datomic provides a unified entity ID type for every data entity, some best
 2. Entity IDs should not be exposed externally. For instance, an API path should not directly use entity IDs.
 3. Keys for external use should have a **unique identity constraint**.
 
-Note: See [Day 26](./day26.md) for details on constraints.
+Note: See [Day 26](./day26-constraints.md) for details on constraints.
 
 ## Enum Types and `:db/ident`
 
-In [Day 24](./day24.md), we listed the data types that attributes in Datomic can use. Compared to traditional SQL databases, one notable omission is enum types.
+In [Day 24](./day24-writing-to-datomic.md), we listed the data types that attributes in Datomic can use. Compared to traditional SQL databases, one notable omission is enum types.
 
 However, Datomic has a unique best practice for handling enums, which consists of three key points:
 
