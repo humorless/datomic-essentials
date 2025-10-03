@@ -19,7 +19,7 @@ The completion of this article series is largely inspired by my work at [Gaiwan]
 
 If you have any thoughts after reading this series, feel free to reach out to [me](https://replware.dev/).
 
-## Talbe of Contents
+## Table of Contents
 
 * [Preface: My Clients Call Me a Heretic](./day01-my-clients-call-me-a-heretic.md)
   * Event Sourcing
